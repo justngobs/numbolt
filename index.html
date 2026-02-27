@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#0a0a1a"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="description" content="NumBolt – the fast-paced math game for kids. 4 modes, 10 levels, XP, achievements. Beat your streak!"/>
-<title>NumBolt – Fast Math for Kids</title>
+<meta name="description" content="NumBolt - the fast-paced math game for kids. 4 modes, 10 levels, XP, achievements. Beat your streak!"/>
+<title>NumBolt - Fast Math for Kids</title>
 <link rel="manifest" href="manifest.json"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet"/>
@@ -20,7 +20,7 @@
   --border: rgba(255,255,255,0.08);
   --border-md: rgba(255,255,255,0.16);
 
-  /* Brand palette — warm, playful */
+  /* Brand palette - warm, playful */
   --orange: #ff6b2b;
   --yellow: #ffd23f;
   --teal: #00d4aa;
@@ -104,7 +104,7 @@ body::before {
   min-height: 100%;
 }
 
-/* HERO — Characters */
+/* HERO - Characters */
 .hero { width: 100%; padding: 16px 0 14px; display: flex; flex-direction: column; align-items: center; position: relative; }
 .hero-chars {
   display: flex; align-items: flex-end; justify-content: center;
@@ -528,7 +528,7 @@ body::before {
     <div class="obstep active" id="ob0">
       <div class="obchar">🧠</div>
       <div class="obtitle">Meet Volt!</div>
-      <div class="obdesc">Your electric math buddy. Help Volt power up by solving math problems — fast!</div>
+      <div class="obdesc">Your electric math buddy. Help Volt power up by solving math problems - fast!</div>
       <div class="obdots"><div class="oddot on"></div><div class="oddot"></div><div class="oddot"></div></div>
       <button class="obbtn" id="obn0">NEXT →</button>
     </div>
@@ -772,7 +772,7 @@ body::before {
       <div class="rs hi"><div class="rsv" id="r-streak">0</div><div class="rsl">Best Streak 🔥</div></div>
       <div class="rs"><div class="rsv" id="r-correct">0</div><div class="rsl">Correct ✓</div></div>
       <div class="rs"><div class="rsv" id="r-acc">0%</div><div class="rsl">Accuracy</div></div>
-      <div class="rs"><div class="rsv" id="r-speed">—</div><div class="rsl">Avg Speed</div></div>
+      <div class="rs"><div class="rsv" id="r-speed">-</div><div class="rsl">Avg Speed</div></div>
     </div>
 
     <div class="xpcard">
@@ -1245,7 +1245,7 @@ function showResult(){
   el('r-streak').textContent=ST.bestStreak;el('r-correct').textContent=ST.correct;
   el('r-acc').textContent=ST.total?Math.round(pct*100)+'%':'0%';
   var sum=0;for(var i=0;i<ST.times.length;i++)sum+=ST.times[i];
-  el('r-speed').textContent=ST.times.length?(sum/ST.times.length).toFixed(1)+'s':'—';
+  el('r-speed').textContent=ST.times.length?(sum/ST.times.length).toFixed(1)+'s':'-';
 
   var xpP=xpProgress(G.xp),ti=xpTierIdx(G.xp);
   el('xp-lvl-lbl').textContent='Level '+(ti+1)+' '+xpTitle(G.xp);
@@ -1282,7 +1282,7 @@ function showResult(){
 }
 
 el('r-share').addEventListener('click',function(){
-  var txt='⚡ NumBolt — '+ST.correct+'/'+ST.total+' correct · '+ST.bestStreak+' streak! Can you beat me? #NumBolt';
+  var txt='⚡ NumBolt - '+ST.correct+'/'+ST.total+' correct · '+ST.bestStreak+' streak! Can you beat me? #NumBolt';
   if(navigator.share){navigator.share({title:'NumBolt',text:txt,url:location.href}).catch(function(){});}
   else if(navigator.clipboard){
     navigator.clipboard.writeText(txt).then(function(){
