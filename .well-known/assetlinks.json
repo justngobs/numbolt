@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.numbolt.mathgame",
+    "sha256_cert_fingerprints": ["60:DE:73:CB:72:DE:B8:4A:39:03:43:55:76:D4:6F:B1:34:E7:7E:6C:1B:DE:7C:06:4F:E8:14:C5:00:81:D9:86"]
+  }
+}]
