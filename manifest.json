@@ -1,0 +1,60 @@
+{
+  "name": "NumBolt – Fast Math for Kids",
+  "short_name": "NumBolt",
+  "description": "Race the clock, solve math problems & power up Volt! 4 game modes, 10 difficulty levels, XP system & daily challenges. The most fun math game for kids ages 6-14.",
+  "start_url": "https://justngobs.github.io/math-saga-game-for-kids/",
+  "id": "https://justngobs.github.io/math-saga-game-for-kids/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#0a0a1a",
+  "theme_color": "#0a0a1a",
+  "categories": ["games", "education", "kids"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "https://justngobs.github.io/math-saga-game-for-kids/",
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "NumBolt Home – Choose your mode"
+    },
+    {
+      "src": "screenshots/game.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "NumBolt Gameplay – Beat the clock!"
+    },
+    {
+      "src": "screenshots/result.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "NumBolt Results – Track your XP"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Daily Challenge",
+      "short_name": "Daily",
+      "description": "Jump into today's daily challenge",
+      "url": "https://justngobs.github.io/math-saga-game-for-kids/?daily=1",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": []
+}
